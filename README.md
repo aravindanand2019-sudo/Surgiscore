@@ -11,6 +11,20 @@ SurgiScore is a Flask-based surgical training platform that analyzes arthroscopi
 - Support Google OAuth login for user accounts
 - Train and reuse custom YOLOv8 weights for instrument tracking
 
+## Model Demo
+
+### Training and Labeling
+
+This GIF shows the model training workflow and dataset labeling process used to prepare the YOLO-based instrument detector.
+
+![Training and labeling demo](assets/demo/training-labeling.gif)
+
+### Instrument Detection
+
+This GIF shows the trained model detecting surgical instruments during arthroscopic video analysis.
+
+![Instrument detection demo](assets/demo/ml-detection.gif)
+
 ## Project Structure
 
 ```text
@@ -23,6 +37,7 @@ SurgiScore is a Flask-based surgical training platform that analyzes arthroscopi
 |-- train_yolo.py           # YOLO training pipeline
 |-- extract_frames.py       # Dataset frame extraction
 |-- auto_label.py           # Dataset labeling helper
+|-- assets/demo/            # README demo GIFs
 |-- templates/              # Frontend templates
 |-- dataset/                # Local training dataset (ignored in git)
 |-- docs/                   # Project notes and presentation material
